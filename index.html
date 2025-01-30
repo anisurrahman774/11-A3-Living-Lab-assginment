@@ -17,6 +17,21 @@
   font-family: "Sora", serif;
   font-optical-sizing: auto;
 }
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fadeInUp {
+    animation: fadeInUp 1s ease-out forwards;
+  }
     </style>
     
 
@@ -45,70 +60,121 @@
 </head>
 
 <body class="sora-font">
-<header class="md:container mx-auto lg:px-20 md:w-[1600px] md:h-[1295px] bg-gradient-to-b from-[#FFFFFF] to-[#DED1B7] mb-96">
+  <header class="md:container mx-auto lg:px-20 md:w-[1600px] md:h-[1295px] bg-gradient-to-b from-[#FFFFFF] to-[#DED1B7] ">
     <nav class="">
         <div class="navbar bg-base-100 border md:border-none border-green-500 bg-[#FFFFFF]">
+            
+            <div class="navbar-start">
+                <img class="hidden md:block w-[150px] h-[60px] animate-bounce" src="c2-assets/logo-header.png" alt="">
+                <img class="block md:hidden w-[100px] h-[40px] animate-pulse" src="c2-assets/logo-footer.png" alt="">
+            </div>
 
-              <!-- manu bar phone device -->
-              <div class="navbar-start">
-
-                <img class="hidden md:block w-[150px] h-[60px]" src="c2-assets/logo-header.png" alt="">
-                <img class="block md:hidden w-[100px] h-[40px]" src="c2-assets/logo-footer.png" alt="">
-              </div>
-
-
-            <!-- lg device -->
+           
             <div class="navbar-center hidden md:flex">
-              <ul class="menu menu-horizontal px-1 text-xl">
-                <li><a>Product</a></li>
-                <li><a>Services</a></li>
-                <li><a>Contact us</a></li>
-              </ul>
+                <ul class="menu menu-horizontal px-1 text-xl">
+                    <li><a class="hover:animate-pulse">Product</a></li>
+                    <li><a class="hover:animate-pulse">Services</a></li>
+                    <li><a class="hover:animate-pulse">Contact us</a></li>
+                </ul>
             </div>
 
+           
             <div class="navbar-end">
-
                 <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn  btn-ghost md:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                  </div>
-
-              <div class="navbar-center hidden md:flex gap-5 ">
-                <i class="fa-solid fa-magnifying-glass m-auto"></i>
-                <i class="fa-solid fa-cart-shopping m-auto"></i>
-                <button class="btn btn-outline border-green-500  hover:bg-red-500 text-black">Login</button>
-                <button class="btn bg-green-500 text-white hover:bg-red-500">Secondary</button>
-              </div>
+                </div>
+                <div class="navbar-center hidden md:flex gap-5">
+                    <i class="fa-solid fa-magnifying-glass m-auto"></i>
+                    <i class="fa-solid fa-cart-shopping m-auto"></i>
+                    
+                    <button class="btn btn-outline border-green-500 hover:bg-red-500 text-black hover:animate-pulse">Login</button>
+                    <button class="btn bg-green-500 text-white hover:bg-red-500 hover:animate-bounce ">Secondary</button>
+                    
+                </div>
             </div>
-          </div>
+        </div>
     </nav>
 
-    <div class=" md:mt-24">
-      <div class="justify-items-center text-center">
-        <h1 class="md:text-6xl text-3xl font-semibold">
-          Freshness <span class="text-green-500">You Can <br>
-            Count On</span>, Prices You’ll Love!
+   
+    <div class="md:mt-24 mt-8">
+        <div class="justify-items-center text-center">
+          <h1 class="md:text-6xl text-3xl font-semibold opacity-0 animate-fadeInUp">
+            Freshness <span class="text-green-500 animate-pulse">You Can <br> Count On</span>, Prices You’ll Love!
         </h1>
-        <p class="text-sm text-gray-500">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
         
-      </div>
-      <div class="justify-items-center mt-36">
-        <img class="md:w-[1031px] md:h-[840px]" src="c2-assets/hero-vegetables.png" alt="">
-      </div>
+            <p class="text-sm text-gray-500">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+        </div>
+        <div class="justify-items-center mt-36 animate-fadeIn">
+            <img class="md:w-[1031px] md:h-[840px]" src="c2-assets/hero-vegetables.png" alt="">
+        </div>
     </div>
 </header>
+
+<main class="md:container mx-auto lg:px-20 mt-40">
+    <section class="">
+    <h1 class="text-4xl font-bold px-10 text-[#179800] mb-5">Services</h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 justify-between justify-items-center">
+
+        <!-- Service 1 -->
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+            <figure class="px-10 pt-10">
+                <div class="avatar">
+                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                        <div class="w-24 rounded-full m-auto mt-7">
+                            <img src="c2-assets/service.png" />
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl">24/7 Services</h2>
+                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+            <figure class="px-10 pt-10">
+                <div class="avatar">
+                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                        <div class="w-24 rounded-full m-auto mt-7">
+                            <img src="c2-assets/delivery.png" />
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl">24/7 Services</h2>
+                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+            <figure class="px-10 pt-10">
+                <div class="avatar">
+                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                        <div class="w-24 rounded-full m-auto mt-7">
+                            <img src="c2-assets/healthy.png" />
+                        </div>
+                    </div>
+                </div>
+            </figure>
+            <div class="card-body items-center text-center">
+                <h2 class="card-title text-2xl">24/7 Services</h2>
+                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
 
 </body>
 
