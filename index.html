@@ -12,35 +12,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <style>
-        
-.sora-font {
-  font-family: "Sora", serif;
-  font-optical-sizing: auto;
-}
+        .sora-font {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+        }
 
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
 
-  .animate-fadeInUp {
-    animation: fadeInUp 1s ease-out forwards;
-  }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
     </style>
-    
+
 
     <!-- daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-     <!-- font awasome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- customizing tailwind -->
@@ -56,126 +58,360 @@
         }
     </script>
 
-    
+
 </head>
 
 <body class="sora-font">
-  <header class="md:container mx-auto lg:px-20 md:w-[1600px] md:h-[1295px] bg-gradient-to-b from-[#FFFFFF] to-[#DED1B7] ">
-    <nav class="">
-        <div class="navbar bg-base-100 border md:border-none border-green-500 bg-[#FFFFFF]">
-            
-            <div class="navbar-start">
-                <img class="hidden md:block w-[150px] h-[60px] animate-bounce" src="c2-assets/logo-header.png" alt="">
-                <img class="block md:hidden w-[100px] h-[40px] animate-pulse" src="c2-assets/logo-footer.png" alt="">
-            </div>
+    <header class="md:container mx-auto lg:px-20 md:h-[1295px] bg-gradient-to-b from-[#FFFFFF] to-[#DED1B7] ">
+        <nav class="">
+            <div class="navbar bg-base-100 border md:border-none border-green-500 bg-[#FFFFFF]">
 
-           
-            <div class="navbar-center hidden md:flex">
-                <ul class="menu menu-horizontal px-1 text-xl">
-                    <li><a class="hover:animate-pulse">Product</a></li>
-                    <li><a class="hover:animate-pulse">Services</a></li>
-                    <li><a class="hover:animate-pulse">Contact us</a></li>
-                </ul>
-            </div>
+                <div class="navbar-start">
+                    <img class="hidden md:block w-[150px] h-[60px] animate-bounce" src="c2-assets/logo-header.png"
+                        alt="">
+                    <img class="block md:hidden w-[100px] h-[40px] animate-pulse" src="c2-assets/logo-footer.png"
+                        alt="">
+                </div>
 
-           
-            <div class="navbar-end">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+
+                <div class="navbar-center hidden md:flex">
+                    <ul class="menu menu-horizontal px-1 text-xl">
+                        <li><a class="hover:animate-pulse">Product</a></li>
+                        <li><a class="hover:animate-pulse">Services</a></li>
+                        <li><a class="hover:animate-pulse">Contact us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="navbar-end">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="navbar-center hidden md:flex gap-5">
+                        <i class="fa-solid fa-magnifying-glass m-auto"></i>
+                        <i class="fa-solid fa-cart-shopping m-auto"></i>
+
+                        <button
+                            class="btn btn-outline border-green-500 hover:bg-red-500 text-black hover:animate-pulse">Login</button>
+                        <button
+                            class="btn bg-green-500 text-white hover:bg-red-500 hover:animate-bounce ">Secondary</button>
+
                     </div>
                 </div>
-                <div class="navbar-center hidden md:flex gap-5">
-                    <i class="fa-solid fa-magnifying-glass m-auto"></i>
-                    <i class="fa-solid fa-cart-shopping m-auto"></i>
-                    
-                    <button class="btn btn-outline border-green-500 hover:bg-red-500 text-black hover:animate-pulse">Login</button>
-                    <button class="btn bg-green-500 text-white hover:bg-red-500 hover:animate-bounce ">Secondary</button>
-                    
-                </div>
+            </div>
+        </nav>
+
+
+        <div class="md:mt-24 mt-8">
+            <div class="justify-items-center text-center">
+                <h1 class="md:text-6xl text-3xl font-semibold opacity-0 animate-fadeInUp">
+                    Freshness <span class="text-green-500 animate-pulse">You Can <br> Count On</span>, Prices You’ll
+                    Love!
+                </h1>
+
+                <p class="text-sm text-gray-500">Shop your daily essentials at unbeatable prices. From fresh produce to
+                    pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="justify-items-center mt-36 animate-fadeIn">
+                <img class="md:w-[1031px] md:h-[840px]" src="c2-assets/hero-vegetables.png" alt="">
             </div>
         </div>
-    </nav>
+    </header>
 
-   
-    <div class="md:mt-24 mt-8">
-        <div class="justify-items-center text-center">
-          <h1 class="md:text-6xl text-3xl font-semibold opacity-0 animate-fadeInUp">
-            Freshness <span class="text-green-500 animate-pulse">You Can <br> Count On</span>, Prices You’ll Love!
-        </h1>
-        
-            <p class="text-sm text-gray-500">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-        </div>
-        <div class="justify-items-center mt-36 animate-fadeIn">
-            <img class="md:w-[1031px] md:h-[840px]" src="c2-assets/hero-vegetables.png" alt="">
-        </div>
-    </div>
-</header>
+    <main class="">
+        <section class="md:container mx-auto lg:px-20 mt-40">
+            <h1 class="text-4xl font-bold px-10 text-[#179800] mb-5">Services</h1>
 
-<main class="md:container mx-auto lg:px-20 mt-40">
-    <section class="">
-    <h1 class="text-4xl font-bold px-10 text-[#179800] mb-5">Services</h1>
+            <div class="grid grid-cols-1 lg:grid-cols-3 justify-between justify-items-center">
 
-    <div class="grid grid-cols-1 lg:grid-cols-3 justify-between justify-items-center">
+                <!-- Service 1 -->
+                <div
+                    class="card bg-[#EFEBE3] w-96 shadow-md shadow-green-500 border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar">
+                            <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                                <div class="w-24 rounded-full m-auto mt-7">
+                                    <img src="c2-assets/service.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">24/7 Services</h2>
+                        <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a
+                            week. This can include customer service, maintenance, and other types of services.</p>
+                    </div>
+                </div>
 
-        <!-- Service 1 -->
-        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
-            <figure class="px-10 pt-10">
-                <div class="avatar">
-                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
-                        <div class="w-24 rounded-full m-auto mt-7">
-                            <img src="c2-assets/service.png" />
+                <!-- Service 2 -->
+                <div
+                    class="card bg-[#EFEBE3] w-96  border mt-4 shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar">
+                            <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                                <div class="w-24 rounded-full m-auto mt-7">
+                                    <img src="c2-assets/delivery.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">24/7 Services</h2>
+                        <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a
+                            week. This can include customer service, maintenance, and other types of services.</p>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="card bg-[#EFEBE3] w-96 shadow-md shadow-green-500 border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                    <figure class="px-10 pt-10">
+                        <div class="avatar">
+                            <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
+                                <div class="w-24 rounded-full m-auto mt-7">
+                                    <img src="c2-assets/healthy.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-2xl">24/7 Services</h2>
+                        <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a
+                            week. This can include customer service, maintenance, and other types of services.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <section class="container mx-auto px-4 sm:px-6 lg:px-20 mt-20 md:mt-40 md:h-[775px] bg-[#DED1B7]">
+
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#179800] pt-10 sm:pt-20 md:pt-40 ml-5">Popular
+                Products</h1>
+
+            <!-- Main Content -->
+            <div class="flex flex-col md:flex-row justify-between mt-6 sm:mt-10">
+
+                <!-- Left Side: Discount Card -->
+                <div
+                    class="w-full md:w-[424px] rounded-2xl h-[402px]  border m-auto sm:m-6 bg-gradient-to-b from-green-500 to-[#F9DF8A] relative overflow-hidden shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+
+                    <div class="pl-6 sm:pl-8 pt-6 sm:pt-8">
+                        <h1 class="text-2xl sm:text-3xl font-bold text-white">30% off</h1>
+                        <p class="py-3 sm:py-4 text-sm sm:text-base">If you're looking for information on a 30% off
+                            vegetable sale, you can check with local grocery stores or online retailers.</p>
+                    </div>
+
+
+                    <div class="pl-6 sm:pl-8">
+                        <button class="btn w-28 sm:w-32 font-semibold text-sm sm:text-lg">Buy Now</button>
+                    </div>
+
+
+                    <img class="absolute bottom-0 right-0 w-1/2 sm:w-2/3" src="c2-assets/vegetable-offer.png" alt="">
+                </div>
+
+
+
+
+                <!-- Right Side: Product Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 border sm:gap-5 p-4 ">
+                    <!-- first Product Card  -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px]  border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/1024px-Mixed_onions-removebg-preview (1).png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Onion 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+
+                    <!-- Second Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg  shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/Tomato_je-removebg-preview.png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Tomato 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+
+                    <!-- 3rd Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/potatoes-scaled-1980x1244-removebg-preview.png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">potatoes 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+                    <!-- 4th Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/Tomato_je-removebg-preview.png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Tomato 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+                    <!-- 5th Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/1024px-Mixed_onions-removebg-preview (1).png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Onion 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+                    <!-- 6th Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/Tomato_je-removebg-preview.png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Tomato 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+                    <!-- 7th Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/1024px-Mixed_onions-removebg-preview (1).png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Onion 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+
+                    <!-- 8th Product Card -->
+                    <div
+                        class="flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/potatoes-scaled-1980x1244-removebg-preview.png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">potatoes 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
+                        </div>
+                    </div>
+
+                    <!-- 9th Product Card -->
+
+                    <div
+                        class="hidden sm:flex gap-4 sm:gap-5 w-full h-[118px] border justify-center items-center bg-white rounded-lg shadow-md shadow-green-500 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
+                        <div class="max-w-16 pl-4 sm:max-w-20">
+                            <img class="rounded-xl" src="c2-assets/1024px-Mixed_onions-removebg-preview (1).png" alt="">
+                        </div>
+                        <div class="gap-4 sm:gap-8">
+                            <div class="flex items-center gap-2 sm:gap-3">
+                                <div class="rating rating-sm sm:rating-md">
+                                    <input type="radio" name="rating-8" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <p class="text-sm sm:text-lg">4.5</p>
+                            </div>
+                            <h1 class="text-lg sm:text-xl md:text-2xl font-bold">Onion 1 KG</h1>
+                            <h1 class="text-sm sm:text-lg font-medium">$ 39.99</h1>
                         </div>
                     </div>
                 </div>
-            </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl">24/7 Services</h2>
-                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Service 2 -->
-        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
-            <figure class="px-10 pt-10">
-                <div class="avatar">
-                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
-                        <div class="w-24 rounded-full m-auto mt-7">
-                            <img src="c2-assets/delivery.png" />
-                        </div>
+        <section class="mb-24">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold text-[#179800] pt-10 sm:pt-20 md:pt-40 ml-5">Arrival & Offers</h1>
+
+            <div>
+                <div class="w-[780px] h-[344px] bg-[#115414] flex ">
+                    <div class="border grid grid-cols-1 w-2/3 m-auto pl-8 ">
+                        <img class="" src="c2-assets/dawat-logo.png" alt="">
+                        <button class="h-[50px] w-[250px] rounded-lg my-8 text-white font-semibold text-lg bg-[#63B76D]">Cook Exotic Dishes</button>
+                        <h1>UP to 20% OFF</h1>
+                    </div>
+                    <div>
+                        <img src="c2-assets/dawat-mock-up.png" alt="">
                     </div>
                 </div>
-            </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl">24/7 Services</h2>
-                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
             </div>
-        </div>
+        </section>
 
-        <!-- Service 3 -->
-        <div class="card bg-[#EFEBE3] w-96 shadow-xl border mt-4 transition-all duration-300 hover:shadow-[0_4px_3px_#179800] hover:rounded-lg hover:translate-y-[-10px]">
-            <figure class="px-10 pt-10">
-                <div class="avatar">
-                    <div class="avatar bg-white rounded-full w-[150px] h-[150px]">
-                        <div class="w-24 rounded-full m-auto mt-7">
-                            <img src="c2-assets/healthy.png" />
-                        </div>
-                    </div>
-                </div>
-            </figure>
-            <div class="card-body items-center text-center">
-                <h2 class="card-title text-2xl">24/7 Services</h2>
-                <p class="text-gray-500">24/7 services are services that are available 24 hours a day, 7 days a week. This can include customer service, maintenance, and other types of services.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-</main>
+    </main>
 
 </body>
 
-</html> 
+</html>
